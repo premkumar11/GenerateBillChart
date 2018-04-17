@@ -2,16 +2,16 @@
 
 This simple java Project is used to generating the bill to a customer for his puchased items.
 
-#Prerequisites
+# Prerequisites
 Install eclipse and jdk1.8 in your local.
 
 # Create Classes
-create below java class
-Customer.java--POJO--Having details about a customer
-Item.java---POJO--Having details about an Item
-MainBill.java---Main Class
-    -The MainBill.java have bill details and list of customer and list of items
-    -Instead of DB maitain List<Customer> and List<item>
+    # create below java class
+    Customer.java--POJO--Having details about a customer
+    Item.java---POJO--Having details about an Item
+    MainBill.java---Main Class
+    - The MainBill.java have bill details and list of customer and list of items
+    - Instead of DB maitain List<Customer> and List<item>
   
   calculateBill(String billNo, String customerId, List<Item> items, float grossTotal, float netAmount){
     // Method is used for calculate the amount and generates the bill summary.
@@ -38,10 +38,10 @@ MainBill.java---Main Class
   }
   
   
-#Execution
+# Execution
 Right clcick the main class and run as java application. We will get the output like below.
 
- Sample inputs:
+# Sample inputs:
 Entered the applicaton
 Enter Bill No: sdgs22
 Enter Customer No: c3
@@ -61,7 +61,7 @@ oldCustomerFlag:true
 
 
 
-Sample Output:
+# Sample Output:
 
 *******BILL SUMMARY*******
 
