@@ -14,7 +14,7 @@ public class MainBill {
 	private String customerId;
 	private float grossTotal;
 	private float netTotal;
-	private List<String> listOfItemIds;
+//	private List<String> listOfItemIds;
 	
 	private List<Item> listOfItems;
 	private List<Customer> listOfCustomers;
@@ -53,13 +53,13 @@ public class MainBill {
 		this.customerId = customerId;
 	}
 
-	public List<String> getListOfItemIds() {
+	/*public List<String> getListOfItemIds() {
 		return listOfItemIds;
 	}
 
 	public void setListOfItemIds(List<String> listOfItemIds) {
 		this.listOfItemIds = listOfItemIds;
-	}
+	}*/
 
 	public List<Item> getListOfItems() {
 		return listOfItems;
@@ -102,7 +102,8 @@ public class MainBill {
 		boolean customerFlag= false;
 		int discount = 0;
 		List<Item> itemList = new ArrayList<Item>();
-		if(items!=null && !items.isEmpty()) {
+		if(items!=null && !items.isEmpty()
+				&& listOfCustomers!=null && !listOfCustomers.isEmpty()) {
 			for(Customer customer : listOfCustomers) {
 				if(customer.getCustomerId().equals(customerId)) {
 					customerFlag = true;
@@ -121,7 +122,7 @@ public class MainBill {
 							itemList = calTotalAmount(discount, items);
 						} else {
 							itemList = calTotalAmount(discount, items);
-						}
+						} 
 					} 
 					break;
 				} 
